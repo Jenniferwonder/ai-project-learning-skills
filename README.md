@@ -1,51 +1,53 @@
-# AI Project Learning Skills
+# AI 项目学习 Skills
 
-Agent skills for **learning-in-public** study of AI-related open-source projects: sync a fork, scaffold `my-learning/`, and resume via `PROGRESS.md`.
+中文 | [English](README.en.md)
 
-Compatible with the [Agent Skills](https://agentskills.io/) format and the [skills CLI](https://github.com/vercel-labs/skills) (`npx skills`).
+面向 **AI 相关开源项目** 的 Agent Skills：以 learning in public 方式同步 fork、搭建 `my-learning/` 学习骨架，并通过 `PROGRESS.md` 支持中断续写。
 
-## Install (one command)
+兼容 [Agent Skills](https://agentskills.io/) 规范与 [skills CLI](https://github.com/vercel-labs/skills)（`npx skills`）。
+
+## 一键安装
 
 ```bash
 npx skills add Jenniferwonder/ai-project-learning-skills
 ```
 
-Or with the full URL:
+或使用完整 URL：
 
 ```bash
 npx skills add https://github.com/Jenniferwonder/ai-project-learning-skills
 ```
 
-Useful flags:
+常用参数：
 
 ```bash
-# List skills in this repo without installing
+# 只列出仓库里的 skill，不安装
 npx skills add Jenniferwonder/ai-project-learning-skills -l
 
-# Install only ai-learning-init
+# 只安装 ai-learning-init
 npx skills add Jenniferwonder/ai-project-learning-skills -s ai-learning-init
 
-# Global install for Cursor
+# 全局安装到 Cursor
 npx skills add Jenniferwonder/ai-project-learning-skills -g -a cursor -y
 
-# Cursor + Claude Code + Copilot (project scope)
+# 同时装到 Cursor / Claude Code / Copilot（项目级）
 npx skills add Jenniferwonder/ai-project-learning-skills -a cursor -a claude-code -a github-copilot -y
 ```
 
-After install, start a new agent session so the skill is picked up.
+安装后请新开一轮 Agent 对话，以便加载 skill。
 
-## Available skills
+## 包含的 Skills
 
-### `ai-learning-init` (command: `ai-init`)
+### `ai-learning-init`（命令：`ai-init`）
 
-Initialize first-person study artifacts for an AI open-source **fork**:
+为指定 AI 开源 **fork** 初始化第一人称学习产出：
 
-1. Hard gate: requires a specified fork URL (or `ai-init continue` with existing `PROGRESS.md`)
-2. Sync fork → scout codebase → scaffold `my-learning/` skeleton
-3. Batched writing of LEARNING_PLAN, feature overview, DB notes, module notes, tech-qa notes
-4. Resume any time via `PROGRESS.md` / `ai-init continue`
+1. **硬门禁**：必须先给出 fork 仓库地址（或 `ai-init continue` 且已有 `PROGRESS.md`）
+2. 同步 fork → 侦察代码库 → 搭建 `my-learning/` 骨架
+3. 分批撰写 LEARNING_PLAN、功能全景、库表、模块笔记、技术高频问答
+4. 随时用 `PROGRESS.md` / `ai-init continue` 续写
 
-**Invoke in chat:**
+**对话中唤起：**
 
 ```text
 ai-init https://github.com/<you>/<fork>.git
@@ -54,25 +56,25 @@ ai-learning-init
 ai-init continue
 ```
 
-**Outputs under the target repo:**
+**在目标仓库中的产出结构：**
 
 ```text
 my-learning/
   PROGRESS.md
   README.md
-  LEARNING_PLAN.md          # staged mermaid route before L/G series
+  LEARNING_PLAN.md          # 分阶段 mermaid 路线在 L/G 系列之前
   code-changes/
   notes/
     01-env-setup.md
     02-project-features-overview.md
     03-db-schema-design.md
-    modules/                # direction 1: by business module
-    tech-qa/                # direction 2: ## domain / ### question
+    modules/                # 方向一：按业务模块
+    tech-qa/                # 方向二：## 领域 / ### 问题
 ```
 
-See [`skills/ai-learning-init/SKILL.md`](skills/ai-learning-init/SKILL.md) and [`skills/ai-learning-init/INSTALL.md`](skills/ai-learning-init/INSTALL.md).
+详见 [`skills/ai-learning-init/SKILL.md`](skills/ai-learning-init/SKILL.md) 与 [`skills/ai-learning-init/INSTALL.md`](skills/ai-learning-init/INSTALL.md)。
 
-## Repository layout
+## 仓库结构
 
 ```text
 skills/
@@ -82,7 +84,7 @@ skills/
     templates/
 ```
 
-The skills CLI discovers each folder that contains a `SKILL.md`.
+skills CLI 会发现每个包含 `SKILL.md` 的目录。
 
 ## License
 
