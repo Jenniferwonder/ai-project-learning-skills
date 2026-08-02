@@ -74,6 +74,15 @@ my-learning/
 
 See [`skills/ai-learning-init/SKILL.md`](skills/ai-learning-init/SKILL.md) and [`skills/ai-learning-init/INSTALL.md`](skills/ai-learning-init/INSTALL.md).
 
+## Example repositories
+
+Repos where this skill was used for learning-in-public study artifacts:
+
+| Repository | Notes |
+|------------|--------|
+| [ai-interview-platform](https://github.com/Jenniferwonder/ai-interview-platform) | AI full-stack Q&A platform learning artifacts |
+| [hot-monitor](https://github.com/Jenniferwonder/hot-monitor) | Hot-topic monitoring project learning artifacts |
+
 ## Repository layout
 
 ```text

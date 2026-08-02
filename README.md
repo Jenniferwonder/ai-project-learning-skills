@@ -74,6 +74,15 @@ my-learning/
 
 详见 [`skills/ai-learning-init/SKILL.md`](skills/ai-learning-init/SKILL.md) 与 [`skills/ai-learning-init/INSTALL.md`](skills/ai-learning-init/INSTALL.md)。
 
+## 示例仓库
+
+用本 skill 做过 learning in public 学习产出的仓库：
+
+| 仓库 | 说明 |
+|------|------|
+| [ai-interview-platform](https://github.com/Jenniferwonder/ai-interview-platform) | AI 全栈模拟问答平台学习产出 |
+| [hot-monitor](https://github.com/Jenniferwonder/hot-monitor) | 热点监控相关项目学习产出 |
+
 ## 仓库结构
 
 ```text
